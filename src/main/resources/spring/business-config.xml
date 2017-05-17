@@ -18,7 +18,7 @@
     <import resource="datasource-config.xml"/>
 
     <!-- enables scanning for @Transactional annotations -->
-    <tx:annotation-driven/>
+    <tx:annotation-driven mode="aspectj"/>
 
 
     <!-- transaction manager, use JtaTransactionManager for global tx -->
