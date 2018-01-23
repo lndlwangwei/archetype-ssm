@@ -7,6 +7,6 @@
     <cache/>
 
     <select id="getUsers" resultType="java.util.Map">
-        SELECT * FROM t_user
+        SELECT * FROM users
     </select>
 </mapper>
