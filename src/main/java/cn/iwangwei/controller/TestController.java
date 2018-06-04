@@ -1,5 +1,6 @@
 package cn.iwangwei.controller;
 
+import cn.iwangwei.domain.User;
 import cn.iwangwei.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +21,7 @@ public class TestController {
 
     @RequestMapping("/hello")
     @ResponseBody
-    public List<Map<String, Object>> test() {
+    public List<User> test() {
         return userService.getUsers();
     }
 }

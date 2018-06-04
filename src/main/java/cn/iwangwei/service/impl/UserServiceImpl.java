@@ -1,6 +1,7 @@
 package cn.iwangwei.service.impl;
 
 import cn.iwangwei.dao.UserDao;
+import cn.iwangwei.domain.User;
 import cn.iwangwei.service.UserService;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +18,7 @@ public class UserServiceImpl implements UserService {
     @Resource
     private UserDao userDao;
 
-    public List<Map<String, Object>> getUsers() {
+    public List<User> getUsers() {
         return userDao.getUsers();
     }
 }

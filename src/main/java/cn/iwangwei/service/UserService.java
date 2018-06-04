@@ -1,5 +1,7 @@
 package cn.iwangwei.service;
 
+import cn.iwangwei.domain.User;
+
 import java.util.List;
 import java.util.Map;
 
@@ -8,5 +10,5 @@ import java.util.Map;
  */
 public interface UserService {
 
-    List<Map<String, Object>> getUsers();
+    List<User> getUsers();
 }
